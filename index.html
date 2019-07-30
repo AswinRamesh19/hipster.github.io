@@ -20,6 +20,13 @@ function myFunction() {
     x.innerHTML = "Hello";
   }
 }
+  
+var _img = document.getElementById('id1');
+var newImg = new Image;
+newImg.onload = function() {
+    _img.src = this.src;
+}
+newImg.src = 'https://www.google.co.in/search?tbm=isch&source=hp&biw=1920&bih=963&ei=nCtAXZrfFqbfz7sP3qugwAk&q=somethng&oq=somethng&gs_l=img.3..0i10i24l10.1694.3273..3574...0.0..0.107.643.7j1......0....1..gws-wiz-img.....0..0.zY6a-pV35Cc&ved=0ahUKEwiancvLxtzjAhWm73MBHd4VCJgQ4dUDCAU&uact=5#imgrc=qnjly1CK047NtM:';
 </script>
 <div class="w3-display-topleft">
 <button type="button"
