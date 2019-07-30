@@ -1,15 +1,26 @@
 <html>
 <head>
-<style>
-p {
-  font-size: 8px;
-}
-</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
+<p>Click the button to swap the text of the DIV element:</p>
+
+<p><button onclick="myFunction()">Click Me</button></p>
+
+<div id="myDIV">Hello</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
 <div class="w3-display-topleft">
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
